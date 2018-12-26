@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "css/lessons.css" %}" />
+    <link rel="shortcut icon" type="image/png" href="../static/images/Favicon64.png"/>
+</head>
+
+<body>
+  <div class="Line">
+    <div class="Textura">
+
+<div class="Menu">
+  <a href="/"><div class="Logo"></div></a>
+  <div class="Scylki">
+    <a href="/"><h3>Главная</h3></a>
+    <a href="/cards/"><h3>Тренировка</h3></a>
+    <a href="/cabinet/"><h3>Поддержка</h3></a>
+    <a href="/admin/"><h3>Admin</h3></a>
+  </div>
+</div>
+
+<div class="Header"><h1>{% block header %}{% endblock header %}</h1>
+{% block content %}{% endblock content %}
+</div>
+
+<div class="InLine">Synespy 2019</div>
+<div class="Footer">
+
+    {% block footer%}<p>Footer </p>{% endblock footer %}
+    
+</div>
+    </div>
+  </div>
+</body>

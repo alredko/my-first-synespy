@@ -1,0 +1,144 @@
+* {
+	padding : 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../cards/fon.svg');
+ }
+
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+
+}
+
+a{
+	color: #fcd285;
+	text-decoration: none;
+}
+a:hover {
+    color: #fcd381;
+    text-decoration: underline;
+}
+a:visited {color: #fcd285;}
+a:active {color: #bdbdbb;}
+
+.Probel, .Pictogramma01, .Pictogramma02, .Pictogramma03, .Pictogramma04, .Pictogramma08, .Pictogramma09, .Pictogramma10, .Pictogramma11, .Pictogramma12, .Pictogramma13, .Pictogramma14, .Pictogramma15 {
+	float: left;
+	width: 10%;
+	height: 205px;
+}
+
+.TexturaFon{
+	background-image: url('../images/Textura.png');
+	height: 1080px;
+}
+
+.Maska{
+	background-image: url('../cards/Maska.svg');
+	height: 1080px;
+}
+
+.Logo{
+	float: left;
+	background-image: url('../images/Synespy.svg');
+	background-size: 100% 100%;
+	width: 10%;
+	height: 150px;
+}
+
+.NaTri{
+	float: left;
+	width: 20%;
+	height: 615px;
+}
+
+.Pictogramma05, .Pictogramma06, .Pictogramma07, .ProbelN{
+	float: left;
+	width: 50%;
+	height: 205px;
+}
+
+.Otstup{
+	float: left;
+	width: 100%;
+	height: 55px;
+}
+
+.Card{
+	background-image: url('../images/Fon.svg');
+	float: left;
+	width: 60%;
+	height: 615px;
+	border-radius: 1rem;
+	margin: auto;
+}
+
+.Textura{
+	background-image: url('../images/Textura.png');
+	height: 100%;
+	border-radius: 1rem;
+}
+
+.ContentCard{
+	width: 100%;
+	height: 540px;
+}
+
+svg{
+	position: absolute;
+	top: 225px;
+	left: 22.5%;
+	width: 55%;
+	height: 540px;
+	
+}
+
+.Knopki{
+	margin: 0.4rem 0rem 0.4rem 0.75rem;
+	font-size: 25px;
+}
+
+.animate{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Montserrat';
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.red{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.purple{
+	background-color: #ae56e2;
+	border-bottom: 5px solid #ab44d7;
+	text-shadow: 0px -2px #9d44d9;
+}
+
+.action-button:active{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
