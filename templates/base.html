@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>{% block title %}Title{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static "css/styles.css" %}" />
     <link rel="shortcut icon" type="image/png" href="../static/images/Favicon64.png"/>
 </head>
@@ -17,39 +17,45 @@
 <div class="Menu">
   <div class="Logo"></div>
   <div class="Scylki">
-    <a href="/cards/"><h3>Тренировка</h3></a>
-    <a href="/lessons/"><h3>Обучение</h3></a>
-    <a href="/cabinet/"><h3>Поддержка</h3></a>
+    <a href="/cards/"><h3>{% block menu.01 %}{% endblock menu.01 %}</h3></a>
+    <a href="/lessons/"><h3>{% block menu.02 %}{% endblock menu.02 %}</h3></a>
+    <a href="/cabinet/"><h3>{% block menu.03 %}{% endblock menu.03 %}</h3></a>
     <a href="/admin/"><h3>Admin</h3></a>
   </div>
 </div>
 
-{% block content %}{% endblock content %}
-
 <div class="GreetingImg"><img src="../static/images/Hello.gif" alt="Добро пожаловать!"></div>
 <div class="Greeting">
 	<div class="lang">{% block lang %}{% endblock lang %}</div>
-	<h1>{% block header %}Header{% endblock header %}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h1>{% block header %}{% endblock header %}</h1>
+  {% block header.text %}{% endblock header.text %}
 </div>
-  
+
 
 <div class="Contenttopleft">
-{% block words %}{% endblock words %}
+  {% block words.text %}{% endblock words.text %}
 </div>
-<div class="Contenttopright"><img src="../static/images/Statia.png" alt="Открытая книга"></div>
+<div class="Contenttopright"><img src="../static/images/Statia.png" alt="Открытая книга">
+  {% block words.image %}{% endblock words.image %}</div>
 <div class="Contentmidlleft"><img src="../static/images/Otzyv.jpg" alt="Отзывы"></div>
-<div class="Contentmidlright"><h2>У нас получилось!</h2>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-<div class="Contentbuttonleft"><h2>Подберите карточки для себя!</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="Contentmidlright">
+  {% block blog.text %}{% endblock blog.text %}
+</div>
+<div class="Contentbuttonleft">
+  {% block entrance.text %}
+  <h2>Choose cards for yourself!</h2>
+  <p>For tourists, one or two weeks before the trip, you can learn the cost of living!</p>
+  <p>To move to another country in just a couple of months, we suggest you learn the necessary number of words. </ p>
+  <p> For those who want to merge with the locals in a foreign country there is a set of 4 thousand words!</p>
+  {% endblock entrance.text %}
+</div>
 <div class="Contentbuttonright"><img src="../static/images/Obraz.jpg" alt="Подбери образ!"></div>
 
 <div class="InLine">Synespy 2019</div>
 <div class="Footer">
 
     {% block footer%}<p>Footer </p>{% endblock footer %}
-    
+
 </div>
 
         </div>

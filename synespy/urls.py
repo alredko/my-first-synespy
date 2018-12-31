@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from cards import views
 from blog import views
-
 from django.views.generic import TemplateView
 
 urlpatterns = [

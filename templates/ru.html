@@ -2,16 +2,40 @@
 
 {% block title %}Главная страница{% endblock title %}
 
-{% block header %}Для русскоязычных пользователей!{% endblock header %}
+{% block menu.01 %}Тренировка{% endblock menu.01 %}
+{% block menu.02 %}Обучение{% endblock menu.02 %}
+{% block menu.03 %}Поддержка{% endblock menu.03 %}
 
 {% block lang %}<a href="/"><img src="../static/images/eng.png"/></a>{% endblock lang %}
 
-{% block words %}
+{% block header %}Для русскоязычных пользователей!{% endblock header %}
+
+{% block header.text %}<p>Часто встреча с иностранным языком приводит к сожалению о невыученых словах или разочарованию о неумении использовать свои знания.</p>
+<p>Это случается из за слабой эффективности зазубривания. Хотя на первый взгляд оно выглядит самым простым и надежным способом. Его легко контроллировать. Большое же количество усилий создает иллюзию важности процесса.  Но приводит к быстрому забыванию и неумению думать на иностранном языке из за отсутствия мелодии и ритма при восприятии.</p><p>И самое главное пугает огромное количество времени, которое надо потратить на изучение слов, правил и практики применения.</p>{% endblock header.text %}
+
+{% block words.text %}
+<h2>10 случайных слов для запоминания!</h2>
+<p>Для того, что бы познакомится с возможностями нашего метода запоминания и развития образного мышления Вы можете попробовать свои силы изучая Случайные слова из нашего словаря.</p>
+<p>Слова меняются каждый день!</p>
+{% endblock words.text %}
+
+{% block words.image %}{% endblock words.image %}
+
+{% block blog.image %}{% endblock blog.image %}
+
+{% block blog.text %}
   {% for post in posts %}
-    <div>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y"  }}</p>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y"  }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
   {% endfor %}
-{% endblock words %}
+{% endblock blog.text %}
+
+{% block entrance.text %}
+<h2>Подберите карточки для себя!</h2>
+<p>Для туристов за одну две недели до путешествия вы можете выучить прожиточный минимум!</p>
+<p>Для переезда в другую страну всего за пару месяцев предлагаем Вам выучить необходимое количество слов.</p>
+<p>Для тех, кто хочит слиться с местными жителями в чужой стране есть комплект из 4 тысяч слов!</p>
+{% endblock entrance.text %}
+
+{% block entrance.image %}{% endblock entrance.image %}

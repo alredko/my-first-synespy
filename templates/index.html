@@ -2,8 +2,39 @@
 
 {% block title %}Main page{% endblock title %}
 
-{% block header %}Welcome to the world of images!{% endblock header %}
- 
+{% block menu.01 %}Treining{% endblock menu.01 %}
+{% block menu.02 %}Instruction{% endblock menu.02 %}
+{% block menu.03 %}Support{% endblock menu.03 %}
+
 {% block lang %}<a href="/ru/"><img src="../static/images/rus.png"/></a>{% endblock lang %}
 
-{% block words %}10 random words of the day!{% endblock words %}
+{% block header %}
+Welcome to the world of images!
+{% endblock header %}
+
+{% block header.text %}
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% endblock header.text %}
+
+{% block words.text %}
+<h2>10 random words of the day!</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% endblock words.text %}
+
+{% block words.image %}{% endblock words.image %}
+
+{% block blog.text %}
+<h2>Suddenly!</h2>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2>Just name</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% endblock blog.text %}
+
+{% block entrance.text %}
+<h2>Choose cards for yourself!</h2>
+<p>For tourists, one or two weeks before the trip, you can learn the cost of living!</p>
+<p>To move to another country in just a couple of months, we suggest you learn the necessary number of words. </ p>
+<p> For those who want to merge with the locals in a foreign country there is a set of 4 thousand words!</p>
+{% endblock entrance.text %}
+
+{% block entrance.image %}{% endblock entrance.image %}
