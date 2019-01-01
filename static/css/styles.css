@@ -1,3 +1,14 @@
+* {
+	padding : 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.Menu, .Logo, .Scylki, .k154, .Content, .ContentDark, .ContentLight, .GreetingImg, .Greeting, .Footer, .Textura, body, img, .Line, .Contenttopleft, .Contenttopright, .Contentmidlleft, .Contentmidlright, .Contentbuttonleft, .Contentbuttonright {
+	display: block;
+	float: left;
+}
+
 .ContentLight{
 	background-image: url('../images/Blueline.svg');
 	background-repeat: no-repeat;
@@ -38,10 +49,6 @@ h1{
 h3{
 	padding: 1rem 0rem 1rem 0rem;
 	font-weight: 500;
-}
-
-p{
-
 }
 
 img{

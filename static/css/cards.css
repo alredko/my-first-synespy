@@ -69,7 +69,7 @@ a:active {color: #bdbdbb;}
 }
 
 .Card{
-	background-image: url('../images/Fon.svg');
+	background-image: url('../images/fon.svg');
 	float: left;
 	width: 60%;
 	height: 615px;
@@ -93,8 +93,8 @@ svg{
 	top: 225px;
 	left: 22.5%;
 	width: 55%;
-	height: 540px;
-	
+	height: 520px;
+
 }
 
 .Knopki{
@@ -116,7 +116,7 @@ svg{
 	font-family: 'Montserrat';
 	font-size: 25px;
 	color: #FFF;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .red{

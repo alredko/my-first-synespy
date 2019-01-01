@@ -1,5 +1,77 @@
 {% extends "cardshab.html" %}
 
-{% block title %}{{Cards}}{% endblock title %}
+{% block title %}Карточка{% endblock title %}
 
-{% block content %}{{Content}}{% endblock content %}
+{% block card.01 %}
+  <h2>Повторение</h2>
+<div class="ContentCard">
+  <svg>
+    <symbol id="s-circles">
+        <g stroke="gray" stroke-width="20" fill="white">
+            <circle cx="25%" cy="20%" r="25%" />
+            <circle cx="70%" cy="40%" r="35%" />
+        </g>
+    </symbol>
+    <mask id="circles">
+        <use xlink:href="#s-circles" />
+    </mask>
+    <symbol id="s-flower-m">
+        <image xlink:href="../static/images/Obraz.jpg" width="100%"/>
+    </symbol>
+  </svg>
+  <svg>
+    <g mask="url(#circles)">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-flower-m"></use>
+    </g>
+  </svg>
+</div>
+
+<div class="Knopki">
+  <a href="#" class="action-button shadow animate red">Не помню</a>
+  <a href="#" class="action-button shadow animate green">Знаю!</a>
+  <a href="#" class="action-button shadow animate purple">Проверить:&nbsp;<input maxlength="15" size="15" value="Word"></a>
+</div>
+{% endblock card.01 %}
+
+{% block card.02 %}
+<h2>Заполнить пробелы</h2>
+<div class="ContentCard">
+  <div class="ImagW"></div>
+  <div class="Word"></div>
+  <div class="Transcr"></div>
+  <div class="ImagT"></div>
+</div>
+
+<div class="Knopki">
+  <a href="#" class="action-button shadow animate red">Не помню</a>
+  <a href="#" class="action-button shadow animate green">Знаю!</a>
+  <a href="#" class="action-button shadow animate purple">Проверить:&nbsp;<input maxlength="15" size="15" value="Word"></a>
+</div>
+{% endblock card.02 %}
+
+{% block card.03 %}
+<h2>Ассоциации</h2>
+<div class="ContentCard">
+  <div class="ImagW"></div>
+  <div class="Word"></div>
+  <div class="Example"></div>
+</div>
+
+<div class="Knopki">
+  <a href="#" class="action-button shadow animate red">Не помню</a>
+  <a href="#" class="action-button shadow animate green">Знаю!</a>
+</div>
+{% endblock card.03 %}
+
+{% block card.04 %}
+<h2>Знакомство</h2>
+<div class="ContentCard">
+  <div class="ImagW"></div>
+  <div class="Word"></div>
+  <div class="Example"></div>
+</div>
+
+<div class="Knopki">
+  <a href="#" class="action-button shadow animate green">Дальше</a>
+</div>
+{% endblock card.04 %}

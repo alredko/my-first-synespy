@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Карточки</title>
+    <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static "css/cards.css" %}" />
     <link rel="shortcut icon" type="image/png" href="../static/images/Favicon64.png"/>
 </head>
@@ -33,34 +33,9 @@
  </div>
   <div class="Card">
   	<div class="Textura">
-  	  <div class="ContentCard">
-  	  
-    <svg>
-        <symbol id="s-circles">
-            <g stroke="gray" stroke-width="20" fill="white">
-                <circle cx="25%" cy="20%" r="25%" />
-                <circle cx="70%" cy="40%" r="35%" />
-            </g>
-        </symbol>
-        <mask id="circles">
-            <use xlink:href="#s-circles" />
-        </mask>
-        <symbol id="s-flower-m">
-            <image xlink:href="../static/images/Obraz.jpg" width="100%"/>
-        </symbol>
-    </svg>
-    <svg>
-        <g mask="url(#circles)">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-flower-m"></use>
-        </g>
-    </svg>
 
-	  </div>
-  	  <div class="Knopki">
-        <a href="#" class="action-button shadow animate red">Не помню</a>
-        <a href="#" class="action-button shadow animate green">Знаю!</a>
-        <a href="#" class="action-button shadow animate purple">Проверить:&nbsp;<input maxlength="15" size="15" value="Word"></a>
-      </div>
+{% block card.01 %}{% endblock card.01 %}
+
   	</div>
   </div>
   <div class="Probel"></div>
@@ -82,7 +57,6 @@
   <div class="Otstup"></div>
   </div>
  </div>
-    
-{% block content%}{% endblock content %}
+
 </body>
 </html>
