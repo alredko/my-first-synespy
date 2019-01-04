@@ -22,7 +22,11 @@ urlpatterns = [
     path(r'', views.index, name='index'),
     path(r'ru/', views.post_list, name="ru.html"),
     path(r'cabinet/', TemplateView.as_view(template_name="cabinet.html")),
-    path(r'cards/', TemplateView.as_view(template_name="cards.html")),
+    path(r'card01/', TemplateView.as_view(template_name="card01.html")),
+    path(r'card02/', TemplateView.as_view(template_name="card02.html")),
+    path(r'card03/', TemplateView.as_view(template_name="card03.html")),
+    path(r'card04/', TemplateView.as_view(template_name="card04.html")),
+    path(r'card05/', TemplateView.as_view(template_name="card05.html")),
     path(r'lessons/', TemplateView.as_view(template_name="lessons.html")),
     path(r'admin/', admin.site.urls),
 ]

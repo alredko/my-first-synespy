@@ -1,0 +1,33 @@
+{% extends "cardshab.html" %}
+
+{% block title %}1 Карточка{% endblock title %}
+
+{% block card %}
+<div class="ContentCard">
+  <svg>
+    <symbol id="s-circles">
+        <g stroke="gray" stroke-width="20" fill="white">
+            <circle cx="25%" cy="20%" r="25%" />
+            <circle cx="70%" cy="40%" r="35%" />
+        </g>
+    </symbol>
+    <mask id="circles">
+        <use xlink:href="#s-circles" />
+    </mask>
+    <symbol id="s-flower-m">
+        <image xlink:href="../static/cards/juice.png" width="100%"/>
+    </symbol>
+  </svg>
+  <svg>
+    <g mask="url(#circles)">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-flower-m"></use>
+    </g>
+  </svg>
+</div>
+
+<div class="Knopki">
+  <a href="/card02/" class="action-button shadow animate red">Не помню</a>
+  <a href="/card01/" class="action-button shadow animate green">Знаю!</a>
+  <a href="/card05/" class="action-button shadow animate purple">Проверить:&nbsp;<input maxlength="15" size="15" value="Word"></a>
+</div>
+{% endblock card %}

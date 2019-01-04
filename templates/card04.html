@@ -1,0 +1,27 @@
+{% extends "cardshab.html" %}
+
+{% block title %}4 Карточка{% endblock title %}
+
+{% block card %}
+<div class="ContentCard">
+  <div class="ImagW">
+    <img src="../static/cards/juice.png" alt="Сок">
+  </div>
+  <div class="Word">
+    <h2>juice</h2>
+    <h3>ˈdʒuːs</h3>
+    <h2></h2>
+  </div>
+  <div class="Transcr">
+    <h2>Джунглевый сок</h2>
+  </div>
+  <div class="ImagT">
+    <img src="../static/cards/juiceT.jpg" alt="Сок">
+  </div>
+</div>
+
+<div class="Knopki">
+  <a href="/card05/" class="action-button shadow animate red">Не помню</a>
+  <a href="/card03/" class="action-button shadow animate green">Знаю!</a>
+</div>
+{% endblock card %}
