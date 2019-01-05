@@ -13,10 +13,10 @@
 
 {% block header %}Советы, опыт, статьи!{% endblock header %}
 
-{% block blog.text %}
-  {% for post in posts %}
-    <h2><a href="">{{ post.title }}</a></h2>
-    <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y" }}</p><br>
-    <p>{{ post.text|linebreaksbr }}</p><br>
+{% block header.text %}
+  {% for note in notes %}
+    <h2><a href="#">{{ note.title }}</a></h2>
+    <p>Автор: {{ note.author }}, {{ note.published_date|date:"d M Y" }}</p><br>
+    <p>{{ note.text|linebreaksbr }}</p><br>
   {% endfor %}
-{% endblock blog.text %}
+{% endblock header.text %}
