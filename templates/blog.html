@@ -1,6 +1,6 @@
 {% extends "otheshab.html" %}
 
-{% block title %}Кабинет{% endblock title %}
+{% block title %}Блог{% endblock title %}
 
 {% block menu.00 %}Главная{% endblock menu.00 %}
 {% block menu.01 %}Тренировка{% endblock menu.01 %}
@@ -11,15 +11,12 @@
 
 {% block lang %}<a href="/"><img src="../static/images/eng.png"/></a>{% endblock lang %}
 
-{% block header %}Личные данные{% endblock header %}
+{% block header %}Советы, опыт, статьи!{% endblock header %}
 
-{% block content %}
-  <p>Имя</p>
-  <p>Курс</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-{% endblock content %}
+{% block blog.text %}
+  {% for post in posts %}
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y" }}</p><br>
+    <p>{{ post.text|linebreaksbr }}</p><br>
+  {% endfor %}
+{% endblock blog.text %}

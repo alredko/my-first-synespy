@@ -4,6 +4,8 @@
 	box-sizing: border-box;
 }
 
+.Line, .Textura, body, img, .Menu, .Logo, .Scylki, .lang, .Header, .Content, .InLine, .Footer{display: block;}
+
 .Line{
 	background-image: url('../images/Line.svg');
 	background-repeat: no-repeat;
@@ -15,14 +17,14 @@
 	background-image: url('../images/Textura.png');
 	height: 2160px;
 }
- 
+
  body {
 	background-image: url(../images/fon.svg);
 	font-family: Montserrat Alternates;
 	text-align: center;
-	
+
  }
- 
+
 h1{
 	color: #044080;
 	padding: 2rem 1rem 1rem 1rem;
@@ -75,10 +77,24 @@ a:active {color: #FDE9C1;}
 	margin-top: 13rem;
 }
 
+.lang{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 90px;
+	padding: 0.5rem;
+}
+
 .Header{
-	float: left;
 	width: 90%;
-	height: 2060px;
+	height: 100px;
+}
+
+.Content{
+	width: 90%;
+	height: 1960px;
+	padding: 1rem;
+	color: #222;
 }
 
 .InLine{

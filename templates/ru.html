@@ -1,10 +1,11 @@
-{% extends "base.html" %}
+{% extends "baseshab.html" %}
 
 {% block title %}Главная страница{% endblock title %}
 
 {% block menu.01 %}Тренировка{% endblock menu.01 %}
 {% block menu.02 %}Обучение{% endblock menu.02 %}
 {% block menu.03 %}Поддержка{% endblock menu.03 %}
+{% block menu.04 %}Блог{% endblock menu.04 %}
 {% block menu.05 %}Новая карточка{% endblock menu.05 %}
 
 {% block lang %}<a href="/"><img src="../static/images/eng.png"/></a>{% endblock lang %}
@@ -27,8 +28,8 @@
 {% block blog.text %}
   {% for post in posts %}
     <h2><a href="">{{ post.title }}</a></h2>
-    <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y"  }}</p>
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p>Автор: {{ post.author }}, {{ post.published_date|date:"d M Y" }}</p><br>
+    <p>{{ post.text|linebreaksbr }}</p><br>
   {% endfor %}
 {% endblock blog.text %}
 

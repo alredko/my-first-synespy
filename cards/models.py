@@ -5,7 +5,7 @@ class Word(models.Model):
     num = models.PositiveIntegerField("№ пп")
     word = models.CharField("Слово", max_length=20)
     imagew = models.ImageField("Образ слова", upload_to='cards/')
-    soundw = models.FilePathField("Звучание слова", path="files/")
+    soundw = models.FilePathField("Озвучка Пр1", path="files/")
     transcr = models.CharField("Транскрипция", max_length=20)
     imaget = models.ImageField("Образ звучания", upload_to='cards/')
     association = models.CharField("Ассоциация", max_length=20)

@@ -89,8 +89,10 @@ a:active {color: #FDE9C1;}
 }
 
 .lang{
-	float: right;
-	width: 108px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 90px;
 	padding: 0.5rem;
 }
 

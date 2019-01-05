@@ -20,12 +20,13 @@
     <a href="/card01/"><h3>{% block menu.01 %}{% endblock menu.01 %}</h3></a>
     <a href="/card05/"><h3>{% block menu.05 %}{% endblock menu.05 %}</h3></a>
     <a href="/lessons/"><h3>{% block menu.02 %}{% endblock menu.02 %}</h3></a>
+    <a href="/blog/"><h3>{% block menu.04 %}{% endblock menu.04 %}</h3></a>
     <a href="/cabinet/"><h3>{% block menu.03 %}{% endblock menu.03 %}</h3></a>
     <a href="/admin/"><h3>Admin</h3></a>
   </div>
 </div>
 
-<div class="GreetingImg"><img src="../static/images/Hello.gif" alt="Добро пожаловать!"></div>
+<div class="GreetingImg"><img src="{% static "images/Hello.gif" %}" alt="Добро пожаловать!"></div>
 <div class="Greeting">
 	<div class="lang">{% block lang %}{% endblock lang %}</div>
 	<h1>{% block header %}{% endblock header %}</h1>
@@ -36,9 +37,9 @@
 <div class="Contenttopleft">
   {% block words.text %}{% endblock words.text %}
 </div>
-<div class="Contenttopright"><img src="../static/images/Statia.png" alt="Открытая книга">
+<div class="Contenttopright"><img src="{% static "images/Statia.png" %}" alt="Открытая книга">
   {% block words.image %}{% endblock words.image %}</div>
-<div class="Contentmidlleft"><img src="../static/images/Otzyv.jpg" alt="Отзывы"></div>
+<div class="Contentmidlleft"><img src="{% static "images/Otzyv.jpg" %}" alt="Отзывы"></div>
 <div class="Contentmidlright">
   {% block blog.text %}{% endblock blog.text %}
 </div>
@@ -50,7 +51,7 @@
   <p> For those who want to merge with the locals in a foreign country there is a set of 4 thousand words!</p>
   {% endblock entrance.text %}
 </div>
-<div class="Contentbuttonright"><img src="../static/images/Obraz.jpg" alt="Подбери образ!"></div>
+<div class="Contentbuttonright"><img src="{% static "images/Obraz.jpg" %}" alt="Подбери образ!"></div>
 
 <div class="InLine">Synespy 2019</div>
 <div class="Footer">
