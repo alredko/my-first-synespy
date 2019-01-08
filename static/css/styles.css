@@ -90,7 +90,7 @@ a:active {color: #FDE9C1;}
 
 .lang{
 	position: fixed;
-	bottom: 0px;
+	bottom: 20px;
 	right: 0px;
 	width: 90px;
 	padding: 0.5rem;

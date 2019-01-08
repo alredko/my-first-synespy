@@ -16,5 +16,8 @@ class Word(models.Model):
     sounde2 = models.FilePathField("Озвучка Пр2", path="files/")
     explain = models.TextField("Пояснение")
 
+    class Meta:
+        ordering = ["num", "word", "interpret"]
+
     def __str__(self):
         return self.word
