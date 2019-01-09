@@ -28,6 +28,6 @@ urlpatterns = [
     path('card04/', TemplateView.as_view(template_name="card04.html")),
     path('card05/', TemplateView.as_view(template_name="card05.html")),
     path('lessons/', TemplateView.as_view(template_name="lessons.html")),
-    path('cabinet/', TemplateView.as_view(template_name="cabinet.html")),
+    path('cabinet/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 ]
