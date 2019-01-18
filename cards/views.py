@@ -6,5 +6,5 @@ def status_list(request):
     return render(request, {'status': status})
 
 def word_list(request):
-    words = Word.objects.get(word='glass')
-    return render(request, 'card01.html', {'words': words})
+    words = Word.objects.get(word='juice')
+    return render(request, 'card03.html', {'words': words})
