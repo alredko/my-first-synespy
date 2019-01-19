@@ -23,6 +23,14 @@
     <a href="/blog/"><h3>{% block menu.04 %}{% endblock menu.04 %}</h3></a>
     <a href="/cabinet/"><h3>{% block menu.03 %}{% endblock menu.03 %}</h3></a>
     <a href="/admin/"><h3>Admin</h3></a>
+    <ul class="Sidebar-nav">
+      {% if user.is_authenticated %}
+        <li>User: {{ user.get_username }}</li>
+        <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+      {% else %}
+        <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+      {% endif %}
+    </ul>
   </div>
 </div>
 
