@@ -30,6 +30,11 @@ h1{
 	padding: 2rem 1rem 1rem 1rem;
 }
 
+h2{
+	color: #044080;
+	padding: 1rem 0rem 1rem 0rem;
+}
+
 h3{
 	padding: 1rem 0rem 1rem 0rem;
 	font-weight: 500;
@@ -53,6 +58,11 @@ a:hover {
 a:visited {color: #e6ac73;}
 a:active {color: #FDE9C1;}
 
+input{
+	font-size: 20px;
+	margin: 0.5rem;
+}
+
 .Menu{
 	float: left;
 	background-image: url('../images/Menu.svg');
@@ -70,6 +80,8 @@ a:active {color: #FDE9C1;}
 	height: 150px;
 }
 
+.Sidebar-nav{color: #fff;}
+
 .Scylki{
 	position: fixed;
 	text-align: center;
@@ -83,6 +95,13 @@ a:active {color: #FDE9C1;}
 	right: 0px;
 	width: 90px;
 	padding: 0.5rem;
+}
+
+.Login{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30rem;
+	text-align: right;
 }
 
 .Header{

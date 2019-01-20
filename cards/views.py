@@ -8,3 +8,10 @@ def status_list(request):
 def word_list(request):
     words = Word.objects.get(word='juice')
     return render(request, 'card03.html', {'words': words})
+
+def user_file_create(request):
+    pass
+
+def word_now(request):
+
+    pass
