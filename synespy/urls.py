@@ -22,6 +22,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name="index.html")),
     path('ru/', views.post_anons, name='ru'),
     path('blog/', include('blog.urls')),
+    path('card/', TemplateView.as_view(template_name="card.html")),
     path('card01/', TemplateView.as_view(template_name="card01.html")),
     path('card02/', TemplateView.as_view(template_name="card02.html")),
     path('card03/', include('cards.urls')),

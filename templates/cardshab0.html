@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>{% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="{% static "css/cards.css" %}" />
+  <link rel="shortcut icon" type="image/png" href="../static/images/Favicon64.png"/>
+</head>
+
+<body>
+
+  <div class="Maska">
+    <div class="Pictogramma"></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka1.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka2.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka3.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka4.svg"/></div>
+    <div class="Probel"></div>
+
+    <div class="NaTri">
+      <div class="ProbelN"></div>
+      <div class="PictogrammalN"><img src="../../static/cards/pictogramka5.svg"/></div>
+      <div class="PictogrammalN"><img src="../../static/cards/pictogramka14.svg"/></div>
+      <div class="ProbelN"></div>
+      <div class="ProbelN"></div>
+      <div class="PictogrammalN"><img src="../../static/cards/pictogramka15.svg"/></div>
+    </div>
+
+    <div class="CardPlase"></div>
+
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka6.svg"/></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka7.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka8.svg"/></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka9.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka10.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka11.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka12.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Pictogramma"><img src="../../static/cards/pictogramka13.svg"/></div>
+    <div class="Probel"></div>
+    <div class="Otstup"></div>
+    <div class="TexturaFon"></div>
+
+     <div class="Card">
+   	   <div class="Textura">
+         {% block card %}{% endblock card %}
+   	   </div>
+      </div>
+
+      <div class="MaskaTop">
+        <a href="/">
+          <div class="Logo"></div>
+        </a>
+        {% block ssylok %}{% endblock ssylok %}
+      </div>
+  </div>
+
+</body>
+</html>

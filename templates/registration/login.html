@@ -14,7 +14,7 @@
       {% else %}
       <h2>Please login to see this page.</h2>
       {% endif %}
-    {% endif %}
+  {% endif %}
 
   <form method="post" action="{% url 'login' %}">
   {% csrf_token %}
