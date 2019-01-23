@@ -10,4 +10,7 @@ urlpatterns = [
     path('05/', views.word_list_05),
     path('new/', views.user_file_create),
     path('training/', views.user_training),
+    path('training_plus/', views.user_training_plus),
+    path('training_2plus/', views.user_training_2plus),
+    path('training_minus/', views.user_training_minus),
 ]
