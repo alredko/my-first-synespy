@@ -4,10 +4,10 @@ class Word(models.Model):
 
     num = models.PositiveIntegerField("№ пп")
     word = models.CharField("Слово", max_length=20)
-    imagew = models.ImageField("Образ слова", upload_to='cards/')
+    imagew = models.ImageField("Образ слова", upload_to='static/cards/')
     soundw = models.FilePathField("Озвучка Пр1", path="files/")
     transcr = models.CharField("Транскрипция", max_length=20)
-    imaget = models.ImageField("Образ звучания", upload_to='cards/')
+    imaget = models.ImageField("Образ звучания", upload_to='static/cards/')
     association = models.CharField("Ассоциация", max_length=20)
     interpret = models.CharField("Перевод", max_length=20)
     example1 = models.CharField("Пример 1", max_length=200)

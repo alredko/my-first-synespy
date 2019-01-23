@@ -1,0 +1,24 @@
+{% extends "cardshab0.html" %}
+
+{% block title %}2 Карточка{% endblock title %}
+
+{% block card %}
+    <div class="ImagW">
+      <img src="/{{ words.imagew }}">
+    </div>
+    <div class="Word">
+      <h2>Какое слово пропущено?</h2>
+    </div>
+    <div class="Example">
+      <h1>{{ words.example1 }} _____</h1>
+      <h1>{{ words.example1 }} _____</h1>
+    </div>
+{% endblock card %}
+
+{% block ssylok %}
+  <div class="Knopki">
+    <a href="/card/04/" class="action-button shadow animate red">Забыл</a>
+    <a href="/card/training/" class="action-button shadow animate green">Следующее</a>
+    <a href="/card/05/" class="action-button shadow animate purple">Проверить:&nbsp;<input maxlength="15" size="15" value="Word"></a>
+  </div>
+{% endblock ssylok %}

@@ -1,0 +1,26 @@
+{% extends "cardshab0.html" %}
+
+{% block title %}4 Карточка{% endblock title %}
+
+{% block card %}
+  <div class="ImagT">
+    <img src="/{{ words.imagew }}">
+  </div>
+  <div class="Assotsiatsia">
+    <h1>{{ words.word }}</h1>
+    <h2>{{ words.transcr }}</h2>
+  </div>
+  <div class="Assotsiatsia">
+    <h2>{{ words.association }}</h2>
+  </div>
+  <div class="ImagT">
+    <img src="/{{ words.imaget }}">
+  </div>
+{% endblock card %}
+
+{% block ssylok %}
+  <div class="Knopki">
+    <a href="/card/05/" class="action-button shadow animate red">В начало</a>
+    <a href="/card/03/" class="action-button shadow animate green">Хорошо запомнил(а) ассоциацию!</a>
+  </div>
+{% endblock ssylok %}

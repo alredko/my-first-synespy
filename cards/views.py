@@ -7,20 +7,51 @@ def status_list(request):
     status = Word.objects.filter(num=1)
     return render(request, {'status': status})
 
-def word_list(request):
-    words = Word.objects.get(word='juice')
-    return render(request, 'card03.html', {'words': words})
+def word_list_01(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
+        DeckOfCards = json.load(filehandle)
+        w = DeckOfCards[0]
+        words = Word.objects.get(num = w[1])
+    return render(request, '01.html', {'words': words})
+
+def word_list_02(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
+        DeckOfCards = json.load(filehandle)
+        w = DeckOfCards[0]
+        words = Word.objects.get(num = w[1])
+    return render(request, '02.html', {'words': words})
+
+def word_list_03(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
+        DeckOfCards = json.load(filehandle)
+        w = DeckOfCards[0]
+        words = Word.objects.get(num = w[1])
+    return render(request, '03.html', {'words': words})
+
+def word_list_04(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
+        DeckOfCards = json.load(filehandle)
+        w = DeckOfCards[0]
+        words = Word.objects.get(num = w[1])
+    return render(request, '04.html', {'words': words})
+
+def word_list_05(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
+        DeckOfCards = json.load(filehandle)
+        w = DeckOfCards[0]
+        words = Word.objects.get(num = w[1])
+    return render(request, '05.html', {'words': words})
 
 def user_file_create(request):
-    with open(r'cards\polzovatel\DeckOfCards.txt', 'r') as filehandle:
+    with open(r'cards/polzovatel/DeckOfCards.txt', 'r') as filehandle:
         DeckOfCards = json.load(filehandle)
 
-    with open(r'cards\polzovatel\User01.txt', 'w') as f:
+    with open(r'cards/polzovatel/User01.txt', 'w') as f:
         json.dump(DeckOfCards, f)
     return render(request, 'new.html', {'DeckOfCards': DeckOfCards})
 
-def user_file_training(request):
-    with open(r'cards\polzovatel\User01.txt', 'r') as filehandle:
+def user_training(request):
+    with open(r'cards/polzovatel/User01.txt', 'r') as filehandle:
         DeckOfCards = json.load(filehandle)
         Word = DeckOfCards[0]
 
@@ -44,6 +75,12 @@ def user_file_training(request):
         else:
             print('Проверь перестановку карт!')
 
-    with open(r'cards\polzovatel\User01.txt', 'w') as f:
+    with open(r'cards/polzovatel/User01.txt', 'w') as f:
         json.dump(DeckOfCards, f)
     return render(request, 'training.html', {'DeckOfCards': DeckOfCards})
+
+def user_training_plus(request):
+    pass
+
+def user_training_minus(request):
+    pass
