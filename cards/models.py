@@ -8,7 +8,7 @@ class Word(models.Model):
     soundw = models.FilePathField("Озвучка Пр1", path="files/")
     transcr = models.CharField("Транскрипция", max_length=20)
     imaget = models.ImageField("Образ звучания", upload_to='static/cards/')
-    association = models.CharField("Ассоциация", max_length=20)
+    association = models.CharField("Ассоциация", max_length=30)
     interpret = models.CharField("Перевод", max_length=20)
     example1 = models.CharField("Пример 1", max_length=200)
     sounde1 = models.FilePathField("Озвучка Пр1", path="files/")

@@ -72,9 +72,9 @@ def user_training_plus(request):
         elif w[0] == 3:
             w[0] = 7
         elif w[0] == 7:
-            w[0] = 10
-        elif w[0] == 10:
-            w[0] = 10
+            w[0] = 12
+        elif w[0] == 12:
+            w[0] = 12
         else:
             print('Ошибка статуса карты!')
 
@@ -82,8 +82,8 @@ def user_training_plus(request):
             DeckOfCards.insert(3, w), DeckOfCards.pop(0)
         elif w[0] == 7:
             DeckOfCards.insert(7, w), DeckOfCards.pop(0)
-        elif w[0] == 10:
-            DeckOfCards.insert(10, w), DeckOfCards.pop(0)
+        elif w[0] == 12:
+            DeckOfCards.insert(12, w), DeckOfCards.pop(0)
         else:
             print('Проверь перестановку карт!')
 
@@ -106,18 +106,18 @@ def user_training_2plus(request):
         if w[0] == 0:
             w[0] = 7
         elif w[0] == 3:
-            w[0] = 10
+            w[0] = 12
         elif w[0] == 7:
-            w[0] = 10
-        elif w[0] == 10:
-            w[0] = 10
+            w[0] = 12
+        elif w[0] == 12:
+            w[0] = 12
         else:
             print('Ошибка статуса карты!')
 
         if w[0] == 7:
             DeckOfCards.insert(7, w), DeckOfCards.pop(0)
-        elif w[0] == 10:
-            DeckOfCards.insert(10, w), DeckOfCards.pop(0)
+        elif w[0] == 12:
+            DeckOfCards.insert(12, w), DeckOfCards.pop(0)
         else:
             print('Проверь перестановку карт!')
 
